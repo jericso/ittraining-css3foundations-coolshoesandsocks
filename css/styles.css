@@ -1,8 +1,13 @@
 @import url("reset.css");
 
 body {
-	background-color: gray;
+	background-color: #f5f5f5;
 	background-image: url("../images/bg-body.jpg");
+	font-size: 62.5%;
+}
+
+#header, #main, #footer {
+	font-size: 1.6em;     /* inherited value (10px) x 1.6em = 16px */
 }
 
 a:link {
@@ -33,6 +38,7 @@ h1, h2, h3, h4 {
 
 #main {
 	background-color: white;
+	background-color: rgba(255, 255, 255, 0.6);
 }
 
 .button {
@@ -68,7 +74,29 @@ input[type="submit"][class="button"] {
 	font-size: 1em;
 }
 
+input[type="submit"][class="button"]:hover {
+	background-color: #d4326d;
+}
+
 #content p:first-of-type:first-letter {
 	font-size: 4em;
 	font-weight: bold;
+}
+
+#newsletter {
+	color: white;
+	background-color: #00ACDF;
+}
+
+#footer {
+	background-color: #ccc;
+	background-image: url("../images/bg-footer.jpg");
+}
+
+.showcase .button:hover {
+	background-color: #00ACDF;
+}
+
+#content {
+	width: 65%;
 }
