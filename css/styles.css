@@ -31,9 +31,7 @@ a:active {
 }
 
 a:focus {
-  outline-color: black;
-  outline-style: dotted;
-  outline-width: 1px;
+  outline: black dotted 1px;
 }
 
 h1,
@@ -69,6 +67,10 @@ blockquote p:after {
   content: '\201D';
 }
 
+blockquote cite:before {
+  content: '- ';
+}
+
 aside > h3 {
   font-weight: bold;
 }
@@ -85,6 +87,7 @@ input[type='email'] {
 
 input[type='submit'][class='button'] {
   font-size: 1em;
+  cursor: pointer;
 }
 
 input[type='submit'][class='button']:hover {
